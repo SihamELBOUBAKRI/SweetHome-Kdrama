@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js">
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Creepster&family=Reenie+Beanie&display=swap');
+
+    :root {
+      --scary: "creepster";
+      --prg: "reenie beanie";
+      --title: "black ops one";
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: auto;
+    }
+
+    #section1 {
+      background-image: url(assets/sweet-home-1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    #awah {
+      color: white;
+      font-size: larger;
+      font-family: var(--title);
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    #pdiv p {
+      color: whitesmoke;
+      font-size: 18px;
+      text-indent: 5px;
+      font-family: var(--prg);
+    }
+
+    #p1 {
+      position: absolute;
+      right: 400px;
+      bottom: 200px;
+    }
+
+    #p2 {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    div h1 {
+      font-size: 5rem;
+      color: rgb(161, 46, 46);
+      font-family: var(--scary);
+      position: relative;
+      top: 50px;
+    }
+
+    .card img {
+      height: 170px;
+      width: 152px;
+      object-fit: cover;
+    }
+
+    .card {
+      height:240px;
+      padding: 0;
+      margin: 5px;
+      width: 154px;
+      background-image: linear-gradient(to top ,rgb(161, 46, 46),black);
+
+    }
+
+    .row {
+      margin-left: 10px;
+    }
+    #section3{
+      background-image: linear-gradient(rgb(161, 46, 46),black);
+    }
+
+    #section3 a{
+      width: 500px;
+      margin: 10px;
+      background-color: rgb(161, 46, 46);
+      color: white;
+      font-size: large;
+      font-family: var(--scary);
+    }
+    .episodes1,.episodes2{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      position: relative;
+      right: 100px;;
+    }
+
+    #section3 h3 ,#section4 h3{
+      font-size: 70px;
+      font-family: var(--title);
+    }
+    #section3 img,#section4 img{
+      position: relative;
+      left: 200px;
+      top: 20px;
+      height: 570px;
+      box-shadow: -20px -20px 20px rgb(161, 46, 46);
+    }
+    #section4 a{
+      width: 500px;
+      margin: 10px;
+      background-color: rgb(161, 46, 46);
+      color: white;
+      font-size: large;
+      font-family: var(--scary);
+      position: relative;
+      top: 30px;
+
+    }
+    #section4{
+      height: 100vh;
+      background-image: linear-gradient(to top ,rgb(161, 46, 46),black);
+    }
+    #section2{
+      height: 100%;
+      background-image: radial-gradient( rgb(161, 46, 46),black);
+    }
+    #section3 a:hover, #section4 a:hover{
+      background-color: white;
+      color: #e14b32;
+      box-shadow: 7px 7px 7px ;
+      box-shadow: 10px 10px 10px 4px #f82500;
+
+    }
+    .navbar {
+      position: fixed;
+      z-index: 2;
+    }
+
+    .card a{
+        color: black;
+        text-decoration: none;
+    }
+    .card a:hover{
+        color: #f82500;
+        text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!--container-fluid-->
+  <div class="">
+    <!--section1-->
+    <section id="section1">
+      <!--navbar-->
+      <nav class="navbar navbar-expand w-100">
+        <a id="awah" class="navbar-brand " href="#section1">SweetHomme</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#section1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Cast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Season1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Season2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Season3</a>
+            </li>
+          </ul>
+        </div>
+      </nav><!--//navbar//-->
+      <div id="pdiv" class="w-100 vh-100 ">
+        <h1 class="text text-center">Sweet Homme</h1>
+        <p id="p1">
+          Season 1 <br>
+          After an unexpected family tragedy, <br>Cha Hyun-soo (Song Kang) leaves his home and moves into an
+          apartment. Soon after <br>, monsters begin appearing. People inside the apartment are trapped inside <br> the
+          building, realizing that monsters are lurking <br>everywhere outside. Hyun-soo and other residents
+          shield <br>themselves inside the building in the hope of surviving as long as they can.
+        </p>
+        <p id="p2">
+          Season 2 <br>
+          The remaining residents of the Green Home <br>apartment need to move out of their houses, which were the
+          scene of their <br>previous monster battles, and venture out into the outside world. The survivors have
+          established <br>a community at what remains of the stadium, but they still <br>cannot let their guard down.
+        </p>
+      </div>
+
+    </section><!--//section1//-->
+
+    
+    <!--section2-->
+    <section id="section2">
+      <div class="row ">
+        <!--card1-->
+        <div class="card" >
+            <img src="assets/sangkang1.jpg" class="card-img-top" alt="Sang-Kang">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Song Kang</h5></a> 
+            </div>
+        </div>
+        <!--card2-->
+        <div class="card" >
+            <img src="assets/gominsi1.jpg" class="card-img-top" alt="Go Min-si ">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Go Min-si </h5></a> 
+            </div>
+        </div>
+        <!--card3-->
+        <div class="card" >
+            <img src="assets/duhyun1.jpg" class="card-img-top" alt="Lee Do-hyun">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Lee Do-hyun</h5></a> 
+            </div>
+        </div>
+        <!--card4-->
+        <div class="card" >
+            <img src="assets/leesi1.jpg" class="card-img-top" alt="Lee Si-young ">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Lee Si-young </h5></a> 
+            </div>
+        </div>
+        <!--card5-->
+        <div class="card" >
+            <img src="assets/gyuyong1.jpg" class="card-img-top" alt="Park Gyu-young">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Park Gyu-young</h5></a> 
+            </div>
+        </div>
+        <!--card6-->
+        <div class="card" >
+            <img src="assets/jinwook1.jpg" class="card-img-top" alt="Lee Jin-wook">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Lee Jin-wook</h5></a> 
+            </div>
+        </div>
+        <!--card7-->
+        <div class="card" >
+            <img src="assets/jinyung1.jpg" class="card-img-top" alt="Jung Jin-young">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Jung Jin-young</h5></a> 
+            </div>
+        </div>
+        <!--card8-->
+        <div class="card" >
+            <img src="assets/yunjong1.jpg" class="card-img-top" alt="Go Yoon-jung">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Go Yoon-jung</h5></a> 
+            </div>
+        </div>
+        <!--card9-->
+        <div class="card" >
+            <img src="assets/mooyeol1.jpg" class="card-img-top" alt="Kim Moo-yeol">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Kim Moo-yeol</h5></a> 
+            </div>
+        </div>
+        <!--card10-->
+        <div class="card" >
+            <img src="assets/kimsung1.jpg" class="card-img-top" alt="Kim Sung-cheol">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Kim Sung-cheol</h5></a> 
+            </div>
+        </div>
+        <!--card11-->
+        <div class="card" >
+            <img src="assets/kimlee1.jpg" class="card-img-top" alt="Kim Yi-kyung">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Kim Yi-kyung</h5></a> 
+            </div>
+        </div>
+        <!--card12-->
+        <div class="card" >
+            <img src="assets/namhee.jpg" class="card-img-top" alt="Kim Nam-hee">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Kim Nam-hee</h5></a> 
+            </div>
+        </div>
+        <!--card13-->
+        <div class="card" >
+            <img src="assets/wonbin1.jpg" class="card-img-top" alt="Chae Won Bin">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Chae Won Bin</h5></a> 
+            </div>
+        </div>
+        <!--card15-->
+        <div class="card" >
+            <img src="assets/hokim1.jpg" class="card-img-top" alt="Kim Sang Ho">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Kim Sang Ho</h5></a> 
+            </div>
+        </div>
+        <!--card16-->
+        <div class="card" >
+            <img src="assets/jonwoo1.jpg" class="card-img-top" alt="Lee Joon-woo ">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Lee Joon-woo </h5></a> 
+            </div>
+        </div>
+        <!--card17-->
+        <div class="card" >
+            <img src="assets/kapso1.jpg" class="card-img-top" alt="Kim Kap-soo">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Kim Kap-soo</h5></a> 
+            </div>
+        </div>
+        <!--card18-->
+        <div class="card" >
+            <img src="assets/yooh1.jpg" class="card-img-top" alt="Yoo Oh-seong">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Yoo Oh-seong</h5></a> 
+            </div>
+        </div>
+        <!--card19-->
+        <div class="card" >
+            <img src="assets/seoh1.jpg" class="card-img-top" alt="Oh Jung-se">
+            <div class="card-body">
+             <a href=""><h5 class="card-title">Oh Jung-se</h5></a> 
+            </div>
+        </div>
+    </section><!--//section2//-->
+
+    <!--section3-->
+    <section id="section3">
+      <h3 class="text text-center">Season 1</h3>
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/shjpg.jpg" >
+        </div>
+        <div class="col-6">
+          <div class="episodes1">
+            <a class="btn "
+              href="#">Episode 1</a>
+            <a class="btn" href="#">Episode
+              2</a>
+            <a class="btn " href="#">Episode
+              3</a>
+            <a class="btn " href="#">Episode
+              4</a>
+            <a class="btn " href="#">Episode
+              5</a>
+            <a class="btn " href="#">Episode
+              6</a>
+            <a class="btn " href="#">Episode
+              7</a>
+            <a class="btn " href="#">Episode
+              8</a>
+            <a class="btn " href="#">Episode
+              9</a>
+            <a class="btn " href="#">Episode
+              10</a>
+          </div>
+          </div>
+     </div>
+    </section><!--//section3//-->
+    <!--section4-->
+    <section id="section4">
+      <h3 class="text text-center">Season 2</h3>
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/sh2.jpg" >
+        </div>
+        <div class="col-6">
+          <div class="episodes2">
+            <a class="btn "
+              href="#">Episode 1</a>
+            <a class="btn" href="#">Episode
+              2</a>
+            <a class="btn " href="#">Episode
+              3</a>
+            <a class="btn " href="#">Episode
+              4</a>
+            <a class="btn " href="#">Episode
+              5</a>
+            <a class="btn " href="#">Episode
+              6</a>
+            <a class="btn " href="#">Episode
+              7</a>
+            <a class="btn " href="#">Episode
+              8</a>
+          </div>
+          </div>
+
+    </section><!--//section4//-->
+
+    <!--//container-fluid//-->
+  </div>
+</body>
+
+</html>
